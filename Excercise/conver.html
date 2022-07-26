@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Convert between Feet and Meters</title>
+</head>
+
+<body>
+    <p id="demo1"></p>
+    <p id="demo2"></p>
+<script>
+    let meter= +prompt("Enter number meter:");
+    let foot = +prompt("Enter Number foot");
+function footToMeter(foot){
+    return (0.305)*foot;
+}
+function meterToFoot(meter){
+    return (3.279)* meter;
+}
+let x1= footToMeter(foot);
+document.getElementById("demo1").innerHTML= foot +" foot ="+x1+ " meter";
+let x2= meterToFoot(meter);
+document.getElementById("demo2").innerHTML= meter +" meter ="+x2+" foot";
+</script>
+</body>
+
+</html>

@@ -1,0 +1,25 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>Stars</title>
+</head>
+
+<body>
+<h3>Factorial in Number</h3>
+    <script>
+      function factorialNumber(n){
+      if(n<=1){
+        return 1;}
+        else{
+        return n*factorialNumber(n-1)
+        }
+      }
+      
+      let n =+prompt("Enter number n:")
+      let result=factorialNumber(n)
+      alert(result)
+    </script>
+</body>
+
+</html>

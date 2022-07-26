@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Prime Number</title>
+</head>
+
+<body>
+<script>
+    let n = +prompt("Enter Number:")
+    let num= primeNumber(n)
+
+    function primeNumber(n){
+    let index=-1; 
+    let check = false   
+    for(let i=2; i<n; i++){
+        if(n%i==0){
+           check= true;  
+           index=i     
+        }             
+    }  
+    if(check){
+        alert("Not prime number")
+    }else{
+        alert("Prime Number")
+    }
+    
+   }
+
+   
+</script>
+</body>
+
+</html>
